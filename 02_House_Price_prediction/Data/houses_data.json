@@ -1,0 +1,53 @@
+[
+    {
+      "id": 1,
+      "location": "New York",
+      "area_sqft": 2100,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "year_built": 2010,
+      "garage": true,
+      "price": 750000
+    },
+    {
+      "id": 2,
+      "location": "Los Angeles",
+      "area_sqft": 1800,
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "year_built": 2015,
+      "garage": true,
+      "price": 850000
+    },
+    {
+      "id": 3,
+      "location": "Chicago",
+      "area_sqft": 1600,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "year_built": 2005,
+      "garage": false,
+      "price": 420000
+    },
+    {
+      "id": 4,
+      "location": "Houston",
+      "area_sqft": 2300,
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "year_built": 2018,
+      "garage": true,
+      "price": 520000
+    },
+    {
+      "id": 5,
+      "location": "Phoenix",
+      "area_sqft": 1900,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "year_built": 2012,
+      "garage": true,
+      "price": 410000
+    }
+  ]
+  
