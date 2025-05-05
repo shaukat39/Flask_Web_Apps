@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tip Prediction</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: url("/static/background.jpg") no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.85);
+            max-width: 500px;
+            margin: 100px auto;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Tip Predictor</h1>        
+        <form method="POST" action="/predict">
+            <input type="number" name="total_bill" placeholder="Total Bill" required>
+            <input type="number" name="size" placeholder="Size" required>
+            <input type="text" name="day" placeholder="Day" required>
+            <input type="text" name="time" placeholder="Time" required>
+            <input type="number" name="percentage" placeholder="Tip Percentage" required>
+            <button type="submit">Predict Tip</button>
+        </form>
+
+        {% if prediction %}
+            <div class="result">Predicted Tip: {{ prediction }}</div>
+        {% endif %}
+    </div>
+</body>
+</html>
